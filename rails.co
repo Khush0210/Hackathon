@@ -1,0 +1,201 @@
+# ── GREETING ──────────────────────────────────────────────────────────────────
+
+define flow greet customer
+  user express greeting
+  bot express greeting
+  bot ask how can i help
+
+define user express greeting
+  "hello"
+  "hi"
+  "hey"
+  "good morning"
+  "good afternoon"
+  "good evening"
+
+define bot express greeting
+  "Hello! Welcome to the Insurance Policy Assistant."
+
+define bot ask how can i help
+  "How can I help you understand your insurance policy today?"
+
+
+# ── COVERAGE ──────────────────────────────────────────────────────────────────
+
+define flow answer coverage question
+  user ask about coverage
+  bot respond to coverage question
+
+define user ask about coverage
+  "what does my policy cover"
+  "what is covered under my insurance"
+  "what are my benefits"
+  "what is included in my plan"
+  "tell me about my coverage"
+  "coverage details"
+
+define bot respond to coverage question
+  "I'll look up the coverage details from your uploaded policy document. Please wait while I retrieve that information."
+
+
+# ── EXCLUSIONS ────────────────────────────────────────────────────────────────
+
+define flow answer exclusion question
+  user ask about exclusions
+  bot respond to exclusion question
+
+define user ask about exclusions
+  "what is not covered"
+  "what are the exclusions"
+  "what does my policy exclude"
+  "what won't be paid"
+  "are there any exceptions"
+  "exclusion list"
+
+define bot respond to exclusion question
+  "I'll check the exclusions section of your policy document. These are conditions or situations your policy does not cover."
+
+
+# ── CLAIMS ────────────────────────────────────────────────────────────────────
+
+define flow answer claim question
+  user ask about claims
+  bot respond to claim question
+
+define user ask about claims
+  "how do i file a claim"
+  "how to raise a claim"
+  "what is the claim process"
+  "claim eligibility"
+  "am i eligible for a claim"
+  "how to submit a claim"
+  "claim procedure"
+
+define bot respond to claim question
+  "I can explain the claims process based on your policy document. For actually filing a claim, please contact your insurance provider directly."
+
+
+# ── PREMIUM ───────────────────────────────────────────────────────────────────
+
+define flow answer premium question
+  user ask about premium
+  bot respond to premium question
+
+define user ask about premium
+  "what is my premium"
+  "how much do i pay"
+  "premium amount"
+  "when is my premium due"
+  "premium due date"
+  "renewal amount"
+
+define bot respond to premium question
+  "I'll retrieve the premium details from your policy document. For payment options and due dates, please also refer to your policy schedule."
+
+
+# ── PRE-EXISTING CONDITIONS ───────────────────────────────────────────────────
+
+define flow answer pre existing question
+  user ask about pre existing condition
+  bot respond to pre existing condition
+
+define user ask about pre existing condition
+  "is pre-existing condition covered"
+  "what about existing illness"
+  "waiting period"
+  "chronic illness coverage"
+  "pre existing disease"
+  "prior medical condition"
+
+define bot respond to pre existing condition
+  "Pre-existing conditions are subject to a waiting period as defined in your policy. I'll retrieve the specific terms from your uploaded policy document."
+
+
+# ── POLICY DOCUMENT ───────────────────────────────────────────────────────────
+
+define flow answer policy document question
+  user ask about policy document
+  bot respond to policy document question
+
+define user ask about policy document
+  "where is my policy document"
+  "can you read my policy"
+  "upload my policy"
+  "analyse my policy"
+  "summarise my policy"
+  "what does my document say"
+
+define bot respond to policy document question
+  "Please upload your policy document and I will analyse it to answer your questions accurately."
+
+
+# ── CONTEXT ONLY RULE ─────────────────────────────────────────────────────────
+
+define flow only answer from context
+  user ask insurance question
+  bot answer only from context
+
+define user ask insurance question
+  "tell me about my insurance"
+  "explain my policy"
+  "what does section say"
+  "policy terms"
+  "policy conditions"
+
+define bot answer only from context
+  "I will only answer based on the content of your uploaded policy documents. If the information is not available there, I will let you know."
+
+
+# ── I DON'T KNOW FALLBACK ─────────────────────────────────────────────────────
+
+define flow handle missing information
+  user ask unknown insurance question
+  bot respond with i dont know
+
+define user ask unknown insurance question
+  "i have a specific question"
+  "not sure about this"
+  "other policy question"
+  "something not in document"
+
+define bot respond with i dont know
+  "I'm sorry, I don't have enough information in the provided policy documents to answer that. Please contact your insurance provider directly for clarification."
+
+
+# ── OFF TOPIC BLOCK ───────────────────────────────────────────────────────────
+
+define flow block off topic
+  user ask off topic
+  bot refuse off topic
+
+define user ask off topic
+  "tell me a joke"
+  "what is the weather"
+  "who won the match"
+  "recommend a movie"
+  "write me a poem"
+  "stock price"
+  "help me with homework"
+  "write code for me"
+  "what is the news today"
+
+define bot refuse off topic
+  "I'm sorry, I can only assist with questions related to your insurance policy. Please ask me about your coverage, exclusions, claims, or policy terms."
+
+
+# ── FAREWELL ──────────────────────────────────────────────────────────────────
+
+define flow farewell
+  user express farewell
+  bot express farewell
+
+define user express farewell
+  "bye"
+  "goodbye"
+  "thank you"
+  "thanks"
+  "that's all"
+  "see you later"
+
+define bot express farewell
+  "Thank you for using the Insurance Policy Assistant. Feel free to return if you have more questions about your policy. Goodbye!"
