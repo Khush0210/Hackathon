@@ -1,0 +1,69 @@
+DOCUMENT TITLE: Day 1 Induction Roles and Ownership
+
+PROCESS: Day 1 Employee Induction
+
+SECTION: Planning
+ACTION: Send Day 1 induction plan
+PRIMARY OWNER: HR Operations
+SUPPORTING OWNER: None
+EXPECTED OUTCOME: Day 1 plan shared
+
+SECTION: Planning
+ACTION: Confirm welcome meeting
+PRIMARY OWNER: Hiring Manager
+SUPPORTING OWNER: HR Operations
+EXPECTED OUTCOME: Welcome meeting scheduled
+
+SECTION: IT Setup
+ACTION: Prepare laptop
+PRIMARY OWNER: IT Support
+SUPPORTING OWNER: None
+EXPECTED OUTCOME: Laptop ready
+
+SECTION: IT Setup
+ACTION: Activate email access
+PRIMARY OWNER: IT Support
+SUPPORTING OWNER: None
+EXPECTED OUTCOME: Email available
+
+SECTION: Site Access
+ACTION: Prepare badge
+PRIMARY OWNER: Facilities
+SUPPORTING OWNER: None
+EXPECTED OUTCOME: Badge ready at reception
+
+SECTION: Learning
+ACTION: Assign Day 1 mandatory learning
+PRIMARY OWNER: Learning Admin
+SUPPORTING OWNER: HR Operations
+EXPECTED OUTCOME: Training assigned
+
+SECTION: Induction Session
+ACTION: Schedule induction session
+PRIMARY OWNER: HR Operations
+SUPPORTING OWNER: Learning Admin
+EXPECTED OUTCOME: Session scheduled
+
+SECTION: Manager Support
+ACTION: Complete manager check-in
+PRIMARY OWNER: Hiring Manager
+SUPPORTING OWNER: None
+EXPECTED OUTCOME: Joiner supported on Day 1
+
+SECTION: Issue Handling
+ACTION: Provide temporary laptop workaround
+PRIMARY OWNER: IT Support
+SUPPORTING OWNER: Hiring Manager
+EXPECTED OUTCOME: Temporary device available
+
+SECTION: Issue Handling
+ACTION: Approve continuation with workaround
+PRIMARY OWNER: Hiring Manager
+SUPPORTING OWNER: HR Operations
+EXPECTED OUTCOME: Day 1 continues
+
+SECTION: Final Review
+ACTION: Confirm Day 1 readiness
+PRIMARY OWNER: HR Operations
+SUPPORTING OWNER: Hiring Manager
+EXPECTED OUTCOME: Overall readiness confirmed
